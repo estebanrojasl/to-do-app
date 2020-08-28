@@ -1,12 +1,35 @@
 body {
-  margin: 5rem;
-  padding: 1rem;
-  border: 0.2rem black solid;
-  border-radius: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
+  background-color: gainsboro;
+  margin-left: 25vw;
+  margin-top: 2rem;
 }
+
+body .to-do-list {
+  width: 50vw;
+  padding: 1rem;
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 1px gray, 0 10px 0 -5px gray;
+          box-shadow: 0 1px 1px gray, 0 10px 0 -5px gray;
+}
+
+body .to-do-list .to-do-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  border-bottom: 0.1rem solid gray;
+}
+
+body .to-do-list .to-do-item:first-child {
+  padding-top: 4rem;
+}
+
+body .to-do-list .to-do-item label {
+  padding-left: 2rem;
+}
+/*# sourceMappingURL=index.css.map */

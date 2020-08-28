@@ -1,0 +1,30 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: gainsboro;
+  margin-left: 25vw;
+  margin-top: 2rem;
+
+  .to-do-list {
+    width: 50vw;
+    padding: 1rem;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 1px 1px gray, 0 10px 0 -5px gray;
+    .to-do-item {
+      display: flex;
+      padding: 2rem;
+      border-bottom: 0.1rem solid gray;
+      &:first-child {
+        padding-top: 4rem;
+      }
+      label {
+        padding-left: 2rem;
+      }
+    }
+  }
+}
