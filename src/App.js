@@ -14,7 +14,10 @@ class App extends Component {
     this.setState((prevState) => {
       return prevState.data.map((item) => {
         if (item.id === id) {
-          item.completed = !item.completed;
+          return {
+            ...item,
+            completed: !item.completed,
+          };
         }
         return item;
       });
