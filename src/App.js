@@ -12,7 +12,7 @@ class App extends Component {
 
   handleChange(id) {
     this.setState((prevState) => {
-      return prevState.data.map((item) => {
+      let updatedItems = prevState.data.map((item) => {
         if (item.id === id) {
           return {
             ...item,
@@ -21,6 +21,7 @@ class App extends Component {
         }
         return item;
       });
+      return { data: updatedItems };
     });
   }
 
